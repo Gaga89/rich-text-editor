@@ -1,0 +1,49 @@
+/* CSS files add styling rules to your content */
+div#richTextEditor{
+  margin: 0px auto;
+  width: 950px;
+  height: 700px; 
+   
+}
+div#toolbar{
+/*   border-bottom: none; */
+  padding: 20px;
+  background-color: rgb(68, 66, 66);
+  border-radius: 10px 10px 0px 0px;
+}
+div#textArea{
+  box-sizing: border-box;
+  border: 5px solid rgb(68, 66, 66);
+  height: 100%;
+  width: 100%;
+}
+iframe#wysiwyg{
+  height: 100%;
+  width: 100%;
+}
+div#toolbar > button{
+  color: orange;
+  border: none;
+/*   outline: none; */
+  background-color: transparent;
+  cursor: pointer;
+  margin: 0 5px;
+
+}
+
+div#toolbar > select{
+  border: none;
+  margin: 0 10px;
+
+}
+
+div#toolbar > button:hover{
+  background-color: orange;
+  color: rgb(68, 66, 66);
+  transition: all 0.3s linear 0s;
+}
+div#toolbar > input{
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
