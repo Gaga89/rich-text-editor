@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>WYSIWYG</title>
+    <link id="favicon" rel="icon" href="https://cdn.gomix.com/2bdfb3f8-05ef-4035-a06e-2043962a3a13%2Ffavicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css"> 
+  </head>  
+  <body>
+    <div id="richTextEditor">
+      <div id="toolbar">
+        <button id="boldButton" title="Bold" onclick="handlers.boldText()"><i class="fas fa-bold"></i></button>
+        <button id="italicButton" title="Italic" onclick="handlers.italicText()"><i class="fas fa-italic"></i></button>
+        <button id="underlineButton" title="Underline"  onclick="handlers.underlineText()"><i class="fas fa-underline"></i></button>
+        <button id="printer" title="Print" onclick="handlers.printDocument()"><i class="fas fa-print"></i></button>
+        <input type="color" id="fontColorButton" title="Change text color" onchange="handlers.changeFontColor(event)">
+        <input type="color" id="backgroundColorButton" title="Change background color" onchange="handlers.changeBckgColor(event)">
+        
+        <select id="fontSelector" onchange="handlers.changeFontFamily(event)" >
+          <option value="Times New Roman" style="font-family: Times New Roman"> Times New Roman</option>
+          <option value="Arial" style="font-family: Arial">Arial</option>
+          <option value="Helvetica" style="font-family: Helvetica">Helvetica</option>
+          <option value="Courier">Courier</option>
+          <option value="Verdana">Verdana</option>
+          <option value="Georgia">Georgia</option>
+          <option value="Comic Sans MS">Comic Sans MS</option>
+          <option value="Cursive">Cursive</option>
+        </select> 
+
+        <select id="fontSize" onchange="handlers.changeFontSize(event)" >
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option> 
+        </select>
+      
+      </div>
+   
+      <div id="textArea">
+       
+        <iframe id="wysiwyg" name="wysiwyg" frameborder="0" ></iframe>
+   
+      </div>
+
+    </div>
+    <script src="/client.js"></script>
+  </body>
+</html>
+ 
